@@ -1,0 +1,15 @@
+<p>
+  {{titulo}}
+</p>
+
+<div *ngIf="parametro">
+  Parametro de url: {{parametro}}
+</div>
+
+<div *ngIf="!parametro">
+  <button (click)="redirigir()" class="btn btn-primary">Pagina con parametro</button>
+</div>
+
+<br>
+
+<a [routerLink]="['/coches']">Abrir choches</a>

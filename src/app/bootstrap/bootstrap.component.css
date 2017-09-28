@@ -1,0 +1,54 @@
+#cont,#fluid
+{
+    color: #0099CC;
+    background: #8EF38E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+#fluid:hover
+{
+    background: #72E072;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+h3
+{
+    text-align: center;
+}
+
+.renglon1 .col-r1
+{
+    /*margin: 1px;*/
+    border: solid #0066CC 1px;
+    text-align: center;
+    color: #959C95;
+    font-weight: bold;
+}
+
+.dist .row .col-dist
+{
+    border: solid #0066CC 1px;
+    text-align: center;
+}
+
+.borde
+{
+    /*margin: 1px;*/
+    border: solid #0099CC 1px;
+    text-align: center;    
+}
+
+.borde:hover
+{
+    background: #CECECE;
+}
+
+.row-container
+{
+    border: solid #F5EEEE 1px;
+    background: white;
+    height: 250px;
+}
+

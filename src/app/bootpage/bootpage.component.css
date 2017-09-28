@@ -1,0 +1,14 @@
+.slider
+{
+    color: #CF3A9E;
+    background: url('../../assets/img/background.jpg');
+    height: 50vh;
+    background-size: contain;
+    background-position: center;
+}
+
+.slider h1
+{
+    background: white;
+    border-radius: 10px;
+}

@@ -1,0 +1,14 @@
+.titulo{
+    color: #0066CC;
+    border: 3px solid #4EBEBE;
+    text-align: center;
+}
+
+#body
+{
+    position: relative;
+}
+
+#seccion-1{
+    /*background: gray;*/
+}

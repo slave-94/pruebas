@@ -1,0 +1,22 @@
+.lista
+{
+	margin: 10px;
+	border: 1px solid #B1AEAE;
+}
+
+.tabla th
+{
+	color: white;
+	background: #0066CC;
+}
+
+.tabla tr td
+{
+	color: white;
+	background: #0099CC;
+}
+
+.encabezado
+{
+	background: #0066CC;
+}

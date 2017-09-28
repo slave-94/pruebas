@@ -1,0 +1,9 @@
+<h3>PARENT</h3>
+
+<span *ngIf="value"><h2>Child says: {{value}}</h2></span>
+
+<hr>
+
+<contchild [enviado]="toChild" (sender)="setData($event)"></contchild>
+
+

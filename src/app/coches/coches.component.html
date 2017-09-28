@@ -1,0 +1,67 @@
+<div class="container">
+	<div class="jumbotron jumbotron-fluid rounded encabezado">
+		<div class="container">
+			<h3 class="display-3 text-center font-weight-bold text-white">
+				Coches
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<form #formCoche="ngForm" (ngSubmit)="submitear()">
+
+				<div class="form-group">
+					<label>Nombre:</label>
+					<input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="coche.nombre" class="form-control col">
+				</div>
+
+				<div class="form-group">
+					<label>Kilometraje:</label>
+					<input type="text" name="kilometraje" #kilometraje="ngModel" [(ngModel)]="coche.kilometraje" class="form-control col">
+				</div>
+
+				<div class="form-group">
+					<label>Color:</label>
+					<input type="text" name="color" #color="ngModel" [(ngModel)]="coche.color" class="form-control col">
+				</div>
+
+				<input type="submit" value="Agregar" class="btn btn-primary form-group">
+			</form>
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<h3>Lista de coches</h3>
+			<div class="lista">
+				<ul>
+					<li *ngFor="let item of coches">
+						{{item.nombre}} : {{item.color}}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<hr>
+
+<div class="container">
+	<div class="row">
+		<div class="container col">
+			<h3>Photos from server</h3>
+			<table class="table tabla">
+				<thead>
+					<tr>
+						<th>No item</th>
+						<th>Item</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let item of photos | slice:0:19; let i=index">
+						<td>{{item.id}}</td>
+						<td>{{item.title}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

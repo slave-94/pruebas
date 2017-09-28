@@ -1,0 +1,144 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-12">
+      <label>Valor:</label>
+      <input type="text" [(ngModel)]="valor_a_enviar">
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <p class="titulo">
+        {{nombre_componente}}
+      </p>
+      <ul>
+        <li *ngFor="let item of listado_frutas">
+          {{item}}
+        </li>
+      </ul>
+      <button (click)="cambiarFrutas()" class="btn btn-primary">Ordenar</button>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <getter [valor]="valor_a_enviar" (valores)="verDatos($event)"></getter>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!--SCROLLSPY-->
+<div class="container">
+  <div class="jumbotron jumbotron-fluid bg-success rounded">
+    <div class="container">
+      <h3 class="display-3 text-center text-white">La metamorfosis</h3>
+      <p class="lead text-center text-white font-weight-bold">Fragmentos</p>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="body" data-target="navbar-container">
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar-container">
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" href="fruta#seccion-1" data-target="#seccion-1">Parte 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fruta#seccion-2" data-target="#seccion-2">Parte 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fruta#seccion-3" data-target="#seccion-3">Parte 3</a>
+        </li>
+      </ul>
+    </nav>
+    
+  <!--SECCIONES-->
+  <div class="container" id="secciones">
+    <div id="seccion-1">
+      <h1 class="text-center">I</h1>
+      <p class="text-justify">Cuando Gregorio Samsa se despertó una mañana después de un sueño intranquilo, se encontró sobre su cama convertido
+        en un monstruoso insecto. Estaba tumbado sobre su espalda dura, y en forma de caparazón y, al levantar un poco la
+        cabeza veía un vientre abombado, parduzco, dividido por partes duras en forma de arco, sobre cuya protuberancia apenas
+        podía mantenerse el cobertor, a punto ya de resbalar al suelo. Sus muchas patas, ridículamente pequeñas en comparación
+        con el resto de su tamaño, le vibraban desamparadas ante los ojos. «¿Qué me ha ocurrido?», pensó. No era un sueño.
+        Su habitación, una auténtica habitación humana, si bien algo pequeña, permanecía tranquila entre las cuatro paredes
+        harto conocidas. Por encima de la mesa, sobre la que se encontraba extendido un muestrario de paños desempaquetados
+        -Samsa era viajante de comercio-, estaba colgado aquel cuadro que hacía poco había recortado de una revista y había
+        colocado en un bonito marco dorado. Representaba a una dama ataviada con un sombrero y una boa de piel, que estaba
+        allí, sentada muy erguida y levantaba hacia el observador un pesado manguito de piel, en el cual había desaparecido
+        su antebrazo. La mirada de Gregorio se dirigió después hacia la ventana, y el tiempo lluvioso -se oían caer gotas
+        de lluvia sobre la chapa del alféizar de la ventana- lo ponía muy melancólico. «¿Qué pasaría -pensó- si durmiese
+        un poco más y olvidase todas las chifladuras?» Pero esto era algo absolutamente imposible, porque estaba acostumbrado
+        a dormir del lado derecho, pero en su estado actual no podía ponerse de ese lado. Aunque se lanzase con mucha fuerza
+        hacia el lado derecho, una y otra vez se volvía a balancear sobre la espalda. Lo intentó cien veces, cerraba los
+        ojos para no tener que ver las patas que pataleaban, y sólo cejaba en su empeño cuando comenzaba a notar en el costado
+        un dolor leve y sordo que antes nunca había sentido. «¡Dios mío! -pensó-. ¡Qué profesión tan dura he elegido! Un
+        día sí y otro también de viaje. Los esfuerzos profesionales son mucho mayores que en el mismo almacén de la ciudad,
+        y además se me ha endosado este ajetreo de viajar, el estar al tanto de los empalmes de tren, la comida mala y a
+        deshora, una relación humana constantemente cambiante, nunca duradera, que jamás llega a ser cordial. ¡Que se vaya
+        todo al diablo!» Sintió sobre el vientre un leve picor, con la espalda se deslizó lentamente más cerca de la cabecera
+        de la cama para poder levantar mejor la cabeza; se encontró con que la parte que le picaba estaba totalmente cubierta
+        por unos pequeños puntos blancos, que no sabía a qué se debían, y quiso palpar esa parte con una pata, pero inmediatamente
+        la retiró, porque el roce le producía escalofríos. Se deslizó de nuevo a su posición inicial. «Esto de levantarse
+        pronto -pensó- hace a uno desvariar. El hombre tiene que dormir. Otros viajantes viven como pachás. Si yo, por ejemplo,
+        a lo largo de la mañana vuelvo a la pensión para pasar a limpio los pedidos que he conseguido, estos señores todavía
+        están sentados tomando el desayuno. Eso podría intentar yo con mi jefe, pero en ese momento iría a parar a la calle.
+        Quién sabe, por lo demás, si no sería lo mejor para mí. Si no tuviera que dominarme por mis padres, ya me habría
+        despedido hace tiempo, me habría presentado ante el jefe y le habría dicho mi opinión con toda mi alma. ¡Se habría
+        caído de la mesa! Sí que es una extraña costumbre la de sentarse sobre la mesa y, desde esa altura, hablar hacia
+        abajo con el empleado que, además, por culpa de la sordera del jefe, tiene que acercarse mucho. Bueno, la esperanza
+        todavía no está perdida del todo; si alguna vez tengo el dinero suficiente para pagar las deudas que mis padres tienen
+        con él -puedo tardar todavía entre cinco y seis años- lo hago con toda seguridad. Entonces habrá llegado el gran
+        momento; ahora, por lo pronto, tengo que levantarme porque el tren sale a las cinco», y miró hacia el despertador
+        que hacía tic tac sobre el armario. «¡Dios del cielo!», pensó...</p>
+    </div>
+
+    <div id="seccion-2">
+      <h1 class="text-center">II</h1>
+      <p class="text-justify">Hasta la caída de la tarde no se despertó Gregorio de su profundo sueño, similar a una pérdida de conocimiento. Seguramente
+        no se hubiese despertado mucho más tarde, aun sin ser molestado, porque se sentía suficientemente repuesto y descansado;
+        sin embargo, le parecía como si le hubiesen despertado unos pasos fugaces y el ruido de la puerta que daba al vestíbulo
+        al ser cerrada con cuidado. El resplandor de las farolas eléctricas de la calle se reflejaba pálidamente aquí y allí
+        en el techo de la habitación y en las partes altas de los muebles, pero abajo, donde se encontraba Gregorio, estaba
+        oscuro. Tanteando todavía torpemente con sus antenas, que ahora aprendía a valorar, se deslizó lentamente hacia la
+        puerta para ver lo que había ocurrido allí. Su costado izquierdo parecía una única y larga cicatriz que le daba desagradables
+        tirones y le obligaba realmente a cojear con sus dos filas de patas. Por cierto, una de las patitas había resultado
+        gravemente herida durante los incidentes de la mañana -casi parecía un milagro que sólo una hubiese resultado herida-,
+        y se arrastraba sin vida. Sólo cuando ya había llegado a la puerta advirtió que lo que lo había atraído hacia ella
+        era el olor a algo comestible, porque allí había una escudilla llena de leche dulce en la que nadaban trocitos de
+        pan. Estuvo a punto de llorar de alegría porque ahora tenía aún más hambre que por la mañana, e inmediatamente introdujo
+        la cabeza dentro de la leche casi hasta por encima de los ojos. Pero pronto volvió a sacarla con desilusión. No sólo
+        comer le resultaba difícil debido a su delicado costado izquierdo -sólo podía comer si todo su cuerpo cooperaba jadeando-,
+        sino que, además, la leche, que siempre había sido su bebida favorita, y que seguramente por eso se la había traído
+        la hermana, ya no le gustaba; es más, se retiró casi con repugnancia de la escudilla y retrocedió a rastras hacia
+        el centro de la habitación...</p>
+    </div>
+
+    <div id="seccion-3">
+      <h1 class="text-center">III</h1>
+      <p class="text-justify">La grave herida de Gregorio, cuyos dolores soportó más de un mes -la manzana permaneció empotrada en la carne como
+        recuerdo visible, ya que nadie se atrevía a retirarla-, pareció recordar, incluso al padre, que Gregorio, a pesar
+        de su triste y repugnante forma actual, era un miembro de la familia, a quien no podía tratarse como a un enemigo,
+        sino frente al cual el deber familiar era aguantarse la repugnancia y resignarse, nada más que resignarse. Y si Gregorio
+        ahora, por culpa de su herida, probablemente había perdido agilidad para siempre, y por lo pronto necesitaba para
+        cruzar su habitación como un viejo inválido largos minutos -no se podía ni pensar en arrastrarse por las alturas-,
+        sin embargo, en compensación por este empeoramiento de su estado, recibió, en su opinión, una reparación más que
+        suficiente: hacia el anochecer se abría la puerta del cuarto de estar, la cual solía observar fijamente ya desde
+        dos horas antes, de forma que, tumbado en la oscuridad de su habitación, sin ser visto desde el comedor, podía ver
+        a toda la familia en la mesa iluminada y podía escuchar sus conversaciones, en cierto modo con el consentimiento
+        general, es decir, de una forma completamente distinta a como había sido hasta ahora. Naturalmente, ya no se trataba
+        de las animadas conversaciones de antaño, en las que Gregorio, desde la habitación de su hotel, siempre había pensado
+        con cierta nostalgia cuando, cansado, tenía que meterse en la cama húmeda. La mayoría de las veces transcurría el
+        tiempo en silencio. El padre no tardaba en dormirse en la silla después de la cena, y la madre y la hermana se recomendaban
+        mutuamente silencio; la madre, inclinada muy por debajo de la luz, cosía ropa fina para un comercio de moda; la hermana,
+        que había aceptado un trabajo como dependienta, estudiaba por la noche estenografía y francés, para conseguir, quizá
+        más tarde, un puesto mejor. A veces el padre se despertaba y, como si no supiera que había dormido, decía a la madre:
+        «¡Cuánto coses hoy también!», e inmediatamente volvía a dormirse mientras la madre y la hermana se sonreían mutuamente.
+        Por una especie de obstinación, el padre se negaba a quitarse el uniforme mientras estaba en casa; y mientras la
+        bata colgaba inútilmente de la percha, dormitaba el padre en su asiento, completamente vestido, como si siempre estuviese
+        preparado para el servicio e incluso en casa esperase también la voz de su superior. Como consecuencia, el uniforme,
+        que no era nuevo ya en un principio, empezó a ensuciarse a pesar del cuidado de la madre y de la hermana. Gregorio
+        se pasaba con frecuencia tardes enteras mirando esta brillante ropa, completamente manchada, con sus botones dorados
+        siempre limpios, con la que el anciano dormía muy incómodo y, sin embargo, tranquilo...</p>
+      <a href="http://ciudadseva.com/texto/la-metamorfosis/" target=_blank role="button" class="btn btn-primary">Leer obra completa</a>
+    </div>
+  </div>
+
+</div>

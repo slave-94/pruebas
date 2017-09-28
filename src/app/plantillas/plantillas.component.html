@@ -1,0 +1,62 @@
+<div class="container">
+	<div class="jumbotron jumbotron-fluid header rounded">
+		<div class="container ">
+			<h1 class="display-3 text-center font-weight-bold text-white text-capitalize">{{titulo}}</h1>
+			<p class="lead text-center text-white font-weight-bold">ng template</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row msg">
+		<div class="col-3">
+			<div *ngIf="administrador;then admin else noAdmin"></div>
+			<ng-template #admin>
+				<h3 style="color:lime">Es Admin</h3>
+			</ng-template>
+
+			<ng-template #noAdmin>
+				<h3 style="color: red">No es Admin</h3>
+			</ng-template>
+		</div>
+		<div class="col-9">
+			<button (click)="cambiar()" class="btn btn-primary">Cambiar</button>
+		</div>
+	</div>
+</div>
+
+<br>
+
+<section class="container">
+	<div class="card-deck">
+		<div class="card">
+			<img class="card-img-top img-fluid" src="../../assets/img/card1.jpg" alt="1984">
+
+			<div class="card-block">
+				<h4 class="card-title text-center">Un mundo feliz</h4>
+				<p class="card-text">Oh, por Ford!</p>
+				<a class="btn btn-primary" role="button" href="https://www.amazon.com.mx/Brave-New-World-Aldous-Huxley/dp/0060850523/ref=sr_1_1?ie=UTF8&qid=1506005924&sr=8-1&keywords=a+brave+new+world" target=_blank>Ver mas</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top img-fluid" src="../../assets/img/card2.jpeg" alt="A brave new world">
+
+			<div class="card-block">
+				<h4 class="card-title text-center">1984</h4>
+				<p class="card-text">El que controla el pasado, controla el presente</p>
+				<a class="btn btn-primary" role="button" href="https://www.amazon.com.mx/1984-George-Orwell/dp/6073116330/ref=sr_1_1/143-0936832-9428160?ie=UTF8&qid=1506005835&sr=8-1&keywords=1984+orwell" target=_blank>Ver mas</a>
+			</div>
+		</div>
+
+		<div class="card">
+			<img class="card-img-top img-fluid" src="../../assets/img/card3.jpg" alt="Orange clockwork">
+
+			<div class="card-block">
+				<h4 class="card-title text-center">Orange clockwork</h4>
+				<p class="card-text">El viejo uno dos</p>
+				<a class="btn btn-primary" role="button" href="https://www.amazon.com.mx/Clockwork-Orange-Anthony-Burgess/dp/0393312836/ref=sr_1_1?ie=UTF8&qid=1506005951&sr=8-1&keywords=clockwork+orange" target=_blank>Ver mas</a>
+			</div>
+		</div>
+	</div>
+</section>

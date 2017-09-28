@@ -1,0 +1,26 @@
+<p>
+  {{titulo}} - {{itemSaved}}
+</p>
+
+<hr>
+
+<button (click)="delete()">Borrar datos</button>
+
+<hr>
+
+<br>
+{{fecha|date:'dd/MM/yyyy'}} |
+{{titulo|uppercase}} | 
+{{8|conversor:5}}
+<br>
+
+Introducir elemento: <input type="text" [(ngModel)]="item"><button (click)="guardarItem()">Add</button>
+
+<ul>
+	<li *ngFor="let item of listado; let i = index">
+		{{item}}
+		<button (click)="borrarItem(i)">Remove</button>
+	</li>
+</ul>
+
+<contparent></contparent>
